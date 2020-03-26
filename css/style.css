@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url(/img/background.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.contact-form, .contact-header, .contact-block, form, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-header {
+    padding: 100px 20px 0;
+}
+
+.section-title {
+    font-size: 90px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.section-title + p {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact-block {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.form > form > input, textarea {
+    width: 500px;
+    height: 50px;
+    background-color: rgba(0, 196, 196, 0.45);
+    border: unset;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    filter: brightness(0.87);
+}
+
+textarea {
+    padding: 12px 0 0 20px;
+    height: 250px;
+    font-size: 15px;
+}
+
+.form > form > input::-webkit-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
+.form > form > input:-ms-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
+.form > form > input::-ms-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
+.form > form > input::placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;} 
+.form > form > textarea::-webkit-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
+.form > form > textarea:-ms-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
+.form > form > textarea::-ms-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
+.form > form > textarea::placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;} 
+
+.form > form > input:hover { cursor: pointer; background-color: rgba(0, 196, 196, 0.6);}
+.form > form > textarea:hover { cursor: pointer; background-color: rgba(0, 196, 196, 0.6);}
+
+.contact-info {
+    height: 170px;
+}
+
+.contact-info > ul > li {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+li > .li-title {
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+li > .value > a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+    filter: brightness(0.73);
+}
+
+footer > .logo {
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+}
+
+footer > .author > span {
+    color: #f00;
+}
