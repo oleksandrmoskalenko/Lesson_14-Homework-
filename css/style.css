@@ -72,8 +72,8 @@ textarea {
 .form > form > textarea::-ms-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
 .form > form > textarea::placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;} 
 
-.form > form > input:hover { cursor: pointer; background-color: rgba(0, 196, 196, 0.6);}
-.form > form > textarea:hover { cursor: pointer; background-color: rgba(0, 196, 196, 0.6);}
+.form > form > input:hover { filter: none; cursor: pointer; background-color: rgba(0, 196, 196, 0.6);}
+.form > form > textarea:hover { filter: none; cursor: pointer; background-color: rgba(0, 196, 196, 0.6);}
 
 .contact-info {
     height: 170px;
