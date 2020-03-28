@@ -5,13 +5,9 @@
     --font: 'Raleway', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box;}
 
-body {
-    font-family: var(--font);
-}
+body { font-family: var(--font);}
 
 .contact-form, .contact-header, .contact-block, form, footer {
     display: flex;
@@ -36,14 +32,15 @@ body {
 
 .section-title {
     font-size: 90px;
-    font-weight: 700;
     padding-bottom: 30px;
 }
+
+.section-title + p, textarea, .contact-info > ul > li, footer, .form > form > input, .form > form > textarea { font-weight: 300;}
+.section-title, .form > form :first-child, li > .li-title, footer > .author > span { font-weight: 700;}
 
 .section-title + p {
     font-size: 17px;
     text-align: center;
-    font-weight: 300;
 }
 
 .contact-block {
@@ -61,20 +58,14 @@ body {
     padding-left: 20px;
     margin-bottom: 15px;
     font-size: 15px;
-    font-weight: 300;
     color: #fff;
     filter: brightness(0.87);
-}
-
-.form > form :first-child {
-    font-weight: 700;
 }
 
 textarea {
     padding: 12px 0                                                              0 20px;
     height: 250px;
     font-size: 15px;
-    font-weight: 300;
 }
 
 .form > form > input::-webkit-input-placeholder { color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;}
@@ -96,14 +87,12 @@ textarea {
 
 .contact-info > ul > li {
     padding-bottom: 20px;
-    font-weight: 300;
     font-size: 20px;
 }
 
 li > .li-title {
     padding-bottom: 5px;
     font-size: 17px;
-    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -120,7 +109,6 @@ footer {
     justify-content: space-around;
     color: #fff;
     font-size: 16px;
-    font-weight: 300;
     filter: brightness(0.73);
 }
 
